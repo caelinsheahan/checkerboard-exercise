@@ -67,8 +67,14 @@ body, html {
 }
 .childr {
   background: red
+}`
+
+var colors = ['#ff0000', '#00ff00', '#0000ff'];
+for(let i=0; i < document.getElementsByClassName('childb').length; i++) {
+var random_color = colors[Math.floor(Math.random() * colors.length)];
+document.getElementsByClassName('childb')[i].style.background = random_color;
+document.getElementsByClassName('childr')[i].style.background = random_color;
 }
 
-`
 
 })
